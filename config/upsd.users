@@ -1,0 +1,9 @@
+[root]
+        password = CHANGEME
+        actions = SET FSD
+        instcmds = ALL
+        upsmon master
+
+[slave]
+        password = slave
+        upsmon slave

@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  app:
+    image: cardonaje/nut:latest
+    volumes:
+      - "./config/ups.conf:/etc/nut/ups.conf"
+      - "./config/upsd.users:/etc/nut/upsd.users"
+      - "./config/upsmon.conf:/etc/nut/upsmon.conf"
+    ports:
+      - 3493:3493
+
